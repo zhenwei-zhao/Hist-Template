@@ -38,8 +38,13 @@
   \begin{tabular}{>{\raggedleft\arraybackslash}p{5cm}
   >{\raggedright\arraybackslash}p{8cm}
   }
+\ifAcademicDegree
+    学术学位领域： & \HISTDegreeCategory \\[10pt]
+    学术学位类别： & \HISTField \\[10pt]
+\else
     专业学位领域： & \HISTDegreeCategory \\[10pt]
     专业学位类别： & \HISTField \\[10pt]
+\fi
     作\hspace{0.35cm}者\hspace{0.35cm}姓\hspace{0.35cm}名： & \HISTAuthor \\[10pt]
     校\hspace{0.35cm}内\hspace{0.35cm}导\hspace{0.35cm}师：&  \HISTSupervisor \\[10pt]
     行\hspace{0.35cm}业\hspace{0.35cm}导\hspace{0.35cm}师：&  \HISTIndustrySupervisor \\
