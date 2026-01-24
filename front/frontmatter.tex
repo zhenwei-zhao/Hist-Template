@@ -1,0 +1,50 @@
+
+%====================== 前置部分（无页眉页脚） ======================%
+\pagestyle{empty}
+\pagenumbering{gobble}
+
+% 中文封面
+\input{front/cover-hist}\blankpage
+
+% 英文扉页
+\input{front/title-en-hist}\blankpage
+
+% 声明页
+\input{front/statement}\blankpage
+
+\pagestyle{plain}
+\pagenumbering{Roman}     % 罗马数字 i, ii, iii
+\setcounter{page}{1}      % 从 i 开始（可选，但推荐）
+\input{front/abstract-cn}
+\input{front/abstract-en}
+
+
+\cleardoublepage  %另起一页
+
+\pagenumbering{gobble}   % 从这里开始，不再显示页码
+% 目录、图表清单（无页眉页脚）  这里不是章节，每一部分需要另起一页
+\pagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+
+
+% 插图清单（可选）
+\ifShowListOfFigures
+  \cleardoublepage
+  \listoffigures
+  \thispagestyle{empty}
+\fi
+
+% 表格清单（可选）
+\ifShowListOfTables
+  \cleardoublepage
+  \listoftables
+  \thispagestyle{empty}
+\fi
+
+% 符号说明（可选）
+\ifShowSymbols
+  \cleardoublepage
+  \input{front/symbols}
+  \thispagestyle{empty}
+\fi
