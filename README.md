@@ -67,6 +67,7 @@ xelatex main.tex
 
 - 因为论文一般都比较长，`Overleaf`可能会出现编译超时的情况。推荐使用本地Texlive环境编译或使用`keepresearch`在线编译。
 - 推荐`keepresearch`，国内网站，不需要科学上网工具，不限制编译时长。本地环境搭建麻烦对新手不友好。
+- 使用`Overleaf`或`keepresearch`时，需要设置编译器`XeLaTex`、主文档`main.tex`。
 
 
 ---
