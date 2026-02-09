@@ -5,6 +5,10 @@
 
 ---
 
+# QQ交流群
+![image](figures/QQ交流群.png)
+
+
 ## 目录结构
 
 ```text
