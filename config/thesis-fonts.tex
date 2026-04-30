@@ -46,6 +46,8 @@
 % =========================
 \usepackage{fontspec}
 
+
+
 % 让 fontspec 可以直接按文件名找字体（不依赖系统安装）
 \defaultfontfeatures{Ligatures=TeX}
 
@@ -108,6 +110,28 @@
   AutoFakeBold = 2.0,
   % BoldFont    = SimSunBold.ttf
 ]
+
+\newCJKfontfamily\xiaobiaosong[
+  Path = ./fonts/,
+  Extension = .ttf,
+  UprightFont = *
+]{方正小标宋简体}
+
+% 楷体_GB2312
+\newCJKfontfamily\kaifont{./fonts/楷体GB2312.ttf}
+
+% 仿宋_GB2312
+\newCJKfontfamily\fangsongfont[
+    Path = ./fonts/,
+  Extension = .ttf,
+  UprightFont = *
+]{仿宋_GB2312}
+
+\newCJKfontfamily\kaitifont[
+    Path = ./fonts/,
+  Extension = .ttf,
+  UprightFont = *
+]{楷体_GB2312}
 
 % 方便你在正文里随时切换：
 \newcommand{\fs}{\CJKfamily{fs}}     % 仿宋
