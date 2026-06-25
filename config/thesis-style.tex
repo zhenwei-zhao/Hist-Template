@@ -25,6 +25,14 @@
 \setlist[enumerate]{itemsep=0.2em, topsep=0.4em}
 
 
+\usepackage{setspace}
+\usepackage{ragged2e}   % 两端对齐
+\usepackage[none]{hyphenat}      % 关闭自动断词
+
+\hyphenpenalty=10000             % 禁止普通英文单词断开
+\exhyphenpenalty=10000           % 禁止在已有连字符处断开
+\emergencystretch=2em            % 给排版留一点弹性，减少文字溢出
+
 %====================== 固定长度下划线（封面/信息页） ======================%
 \newcommand{\fixuline}[2][4cm]{%
   \makebox[#1][c]{\underline{\makebox[#1][c]{#2}}}%
