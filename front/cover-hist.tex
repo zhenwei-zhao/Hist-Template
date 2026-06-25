@@ -6,17 +6,17 @@
 \begin{textblock*}{1em}(2cm,5cm)
 
   \raggedright
-  {\song\zihao{-4}
+  {\song\zihao{-4}\bf
 \setlength{\baselineskip}{1.2em}
   论\\文\\题\\目\\ $\cdot\ \cdot$ \\
   
   X\\X\\X\\X\\X\\X\\X\\X\\X\\X\\
   
-  \hspace{1pt}
+  \hspace{2em}
 
    二\\〇\\二\\六\\届\\
 
-  \hspace{1pt}
+  \hspace{2em}
   
     姓\\名\\ $\cdot\ \cdot$\\
     X\\X\\X\\
@@ -44,14 +44,14 @@
   {\song\zihao{0} \bfseries  硕\hspace{0.5cm}士\hspace{0.5cm}学\hspace{0.5cm}位\hspace{0.5cm}论\hspace{0.5cm}文\par}
   \vspace{0.6cm}
 
-{\song\zihao{2}\bfseries
-\ifAcademicDegree
-  （\hspace{0.15cm}学\hspace{0.15cm}术\hspace{0.15cm}学\hspace{0.15cm}位\hspace{0.15cm}）
-\else
-  （\hspace{0.15cm}专\hspace{0.15cm}业\hspace{0.15cm}学\hspace{0.15cm}位\hspace{0.15cm}）
-\fi
-\par}
-\vspace{2cm}
+% {\song\zihao{2}\bfseries
+% \ifAcademicDegree
+%   （\hspace{0.15cm}学\hspace{0.15cm}术\hspace{0.15cm}学\hspace{0.15cm}位\hspace{0.15cm}）
+% \else
+%   （\hspace{0.15cm}专\hspace{0.15cm}业\hspace{0.15cm}学\hspace{0.15cm}位\hspace{0.15cm}）
+% \fi
+% \par}
+\vspace{2.6cm}
 
   %====================== 题目（学校通常加粗、字号较大） ======================%
   {\song\zihao{-2}\bfseries \HISTTitleCN\par}
@@ -63,15 +63,19 @@
   >{\raggedright\arraybackslash}p{8cm}
   }
 \ifAcademicDegree
-    学术学位领域： & \HISTDegreeCategory \\[10pt]
-    学术学位类别： & \HISTField \\[10pt]
+     学\hspace{0.35cm}科\hspace{0.35cm}专\hspace{0.35cm}业： & \HISTField \\[10pt]
+    研\hspace{0.35cm}究\hspace{0.35cm}方\hspace{0.35cm}向： & \ResearchDirection \\[10pt]
+    申请学位类别： & \HISTDegreeCategory \\[10pt]
+   作\hspace{0.35cm}者\hspace{0.35cm}姓\hspace{0.35cm}名： & \HISTAuthor \\[10pt]
+    导\hspace{0.35cm}师\hspace{0.35cm}姓\hspace{0.35cm}名： & \HISTSupervisor \\[10pt]
 \else
-    专业学位领域： & \HISTDegreeCategory \\[10pt]
-    专业学位类别： & \HISTField \\[10pt]
-\fi
+    专业学位类别： & \HISTDegreeCategory \\[10pt]
+    专业学位领域： & \HISTField \\[10pt]
     作\hspace{0.35cm}者\hspace{0.35cm}姓\hspace{0.35cm}名： & \HISTAuthor \\[10pt]
     校\hspace{0.35cm}内\hspace{0.35cm}导\hspace{0.35cm}师：&  \HISTSupervisor \\[10pt]
     行\hspace{0.35cm}业\hspace{0.35cm}导\hspace{0.35cm}师：&  \HISTIndustrySupervisor \\
+\fi
+    
   \end{tabular}
   \par}
 
